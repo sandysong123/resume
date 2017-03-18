@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>WEB_前端工程师</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script>
+        var desW=640,
+                winW=document.documentElement.clientWidth>=640?640:document.documentElement.clientWidth;
+        document.documentElement.style.fontSize=winW/desW*100 + 'px';
+    </script>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="music musicCur">
+        <audio src="audio/TryEverything.mp3" loop preload="none" id="everything"></audio>
+    </div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+            <h3 class="title"><i>&nbsp;</i>个人简历</h3>
+            <div class="icon-hill">启</div>
+        </div>
+        <div class="swiper-slide slide2">
+            <ul class="resume-list">
+                <li><a href="#page3">个人信息</a></li>
+                <li><a href="#page4">工作经验</a></li>
+                <li><a href="#page5">专业技能</a></li>
+                <li><a href="#page6">自我评价</a></li>
+                <li><a href="#page7">联系我</a></li>
+            </ul>
+        </div>
+        <div class="swiper-slide slide3">
+            <h3>个人信息</h3>
+            <div class="bg">
+                <ul class="info">
+                    <li><strong>姓  　名：</strong>宋瑞霞</li>
+                    <li><strong>学  　历：</strong>大专</li>
+                    <li><strong>电　  话：</strong>13552386577</li>
+                    <li><strong>邮  　箱：</strong>383470003@qq.com</li>
+                    <li><strong>目前状况：</strong>已离职</li>
+                </ul>
+                <i class="line t">&nbsp;</i>
+                <i class="line r">&nbsp;</i>
+                <i class="line b">&nbsp;</i>
+                <i class="line l">&nbsp;</i>
+            </div>
+        </div>
+        <div class="swiper-slide slide4">
+            <h3>工作经验</h3>
+            <ul class="work-list">
+                <li>
+                    <h4>时趣互动(北京)科技有限公司</h4>
+                    <p>2015年11月  – 2016年10月</p>
+                    <div>
+                        负责部门产品的页面组件的规划及实现，提供页面统一使用的标准组件，组件不仅可以使产品风格化的统一，更可以使项目的快速搭建。
+                    </div>
+                </li>
+                <li>
+                    <h4>新浪北京广告有限公司</h4>
+                    <p>2010年9月  – 2015年10月</p>
+                    <strong>新浪地方站</strong>
+                    <div>负责新浪地方站网站的规划及代码编写规范</div>
+                    <p>新浪四川地方站：http://sc.sina.com.cn/</p>
+                    <strong>鲜城产品技术部</strong>
+                    <p>负责鲜城及其相关产品宣传专题</p>
+                    <p>PC/Mobile: http://51xiancheng.com</p>
+                </li>
+                <li>
+                    <h4>金融界网站（jrj.com.cn）</h4>
+                    <p>2008年3月 – 2010年9月　</p>
+                    <div>
+                        参与制作MYJRJ页面、个股频道、论坛、股票频道等频道网页构建工作。
+                        主导MYJRJ( i.jrj.com.cn )的框架的建设
+                    </div>
+                    <p>http://www.jrj.com.cn</p>
+                </li>
+                <li>
+                    <h4>占座网(zhanzuo.com)</h4>
+                    <p>2006年08月-2008年02月</p>
+                    <div>负责公司网站及活动的页面制作，以W3c标准制作公司页面，参与了网站新版的CSS构架和制作，可手写HTML和CSS代码，以减少网页的冗余代码。</div>
+                </li>
+                <li>
+                    <h4>北京银河网创</h4>
+                    <p>2004年06月-2006年07月</p>
+                    <div>负责Google左侧排名优化工作，根据搜索引擎优化规则，利用HTML+CSS重构网站，使网站更快的被各大搜索引擎收录,并得到更高的评价及更好的排名!</div>
+                </li>
+            </ul>
+        </div>
+        <div class="swiper-slide slide5">
+            <h3>专业技能</h3>
+            <ul class="skill-text">
+                <li>精通pc、mobile页面的布局</li>
+                <li>精通HTML、CSS，熟悉SASS预编译器；</li>
+                <li>熟练使用JS，及JQ 、Zepto库</li>
+                <li>熟练AJAX数据交互，EJS模板渲染页面</li>
+                <li>熟悉angularJS1.X，react，正在学习VUE</li>
+                <li>熟悉webpack和gulp前端自动化工具；</li>
+                <li>了解node及其express框架；</li>
+                <li>了解mongo/mongoose 数据库；</li>
+                <li>了解搜索引擎优化</li>
+            </ul>
+        </div>
+        <div class="swiper-slide slide6">
+            <h3>自我评价</h3>
+            <div class="assess-wrap">
+                <ul class="assess-box">
+                    <li>团队合作</li>
+                    <li>诚实守信</li>
+                    <li>积极进取</li>
+                    <li>沟通协作</li>
+                    <li>稳重严谨</li>
+                    <li>认真负责</li>
+                </ul>
+            </div>
+        </div>
+        <div class="swiper-slide slide7">
+            <h3>联系我</h3>
+            <img class="head-pic" src="img/srx_head.jpg" alt=""/>
+            <div class="tc"><strong>宋瑞霞<br />前端工程师</strong></div>
+            <a class="icon-tel" href="tel:13552386577">Call Me</a>
+        </div>
+    </div>
+    <div class="icon-hill"></div>
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'vertical',
+        loop: true,
+        grabCursor:true,
+        nextButton: '.icon-hill',
+        onTransitionEnd:function(swiper){
+            var curIndex=swiper.activeIndex;
+            var slides=swiper.slides;
+            [].forEach.call(slides,function(item,index){
+                item.id='';
+                if(index==curIndex){
+                    slides[curIndex].id=curIndex==0?'page'+(slides.length-2):curIndex==slides.length-1?'page1':"page"+curIndex;
+                }
+            });
+        }
+    });
+
+    var music=document.querySelector('.music');
+    var everything=document.querySelector('#everything');
+    window.setTimeout(function(){
+        everything.play();
+        music.style.opacity=1;
+        music.className='music musicCur';
+    },1000);
+    music.addEventListener('click',function(){
+        if(everything.paused){
+            everything.play();//播放
+            music.className='music musicCur'
+        }else{
+            everything.pause();//停止
+            music.className='music';
+        }
+    });
+
+    //->只要在移动端使用TOUCH MOVE事件实现滑动,都需要把当前文档滑动的默认行为阻止掉;移动端的浏览器大部分都有自身的滑动操作,例如:滑动的时候是切换到下一个页卡区域...
+    $(document).on('touchmove', function (e) {
+        e.preventDefault();
+    });
+
+
+    var $workList = $('.work-list');
+    //->首先在盒子的自定义属性上记录一下起始的旋转角度
+    $workList.attr({
+        rotateY: 0
+    });
+    $workList.on('touchstart', function (e) {
+        var point = e.changedTouches[0];
+        $(this).attr({
+            strX: point.pageX,
+            changeX: 0,
+            isMove: false
+        });
+    }).on('touchmove', function (e) {
+        var point = e.changedTouches[0],
+                changeX = point.pageX - $(this).attr('strX');
+        $(this).attr({
+            changeX: changeX
+        });
+    }).on('touchend', function (e) {
+        var changeX = parseFloat($(this).attr('changeX'));
+        if (Math.abs(changeX) < 10 ) return;
+
+        var rotateY = parseFloat($(this).attr('rotateY'));
+        if(changeX>10){
+            rotateY = rotateY + 72;
+        }
+        if(changeX<-10){
+            rotateY = rotateY - 72;
+        }
+        $(this).css({
+            transition: '.5s',
+            transform: 'rotateY(' + rotateY + 'deg)'
+        }).attr({
+            rotateY: rotateY
+        })
+    });
+</script>
+
+</body>
+</html>
