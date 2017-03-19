@@ -287,7 +287,7 @@ h3 {
 .bg {
   position: relative;
   margin: 0 15px;
-  padding: 0 10px 0 15px;
+  padding: 0 10px 0 20px;
   height: 76%;
   border-radius: 5px;
   box-sizing: border-box;
@@ -301,13 +301,13 @@ h3 {
     background-color: rgba(255, 255, 255, 0.8); }
     .bg .line.t {
       top: 0;
-      height: 5px; }
+      height: 2px; }
     .bg .line.r {
       right: 0;
-      width: 5px; }
+      width: 2px; }
     .bg .line.b {
       bottom: 0;
-      height: 5px; }
+      height: 2px; }
     .bg .line.l {
       left: 0;
       width: 8px; }
@@ -589,18 +589,18 @@ h3 {
     opacity: 1; } }
 @-webkit-keyframes rotate {
   0% {
-    -webkit-transform: rotate3d(1, 1, 0, 0deg);
-    transform: rotate3d(1, 1, 0, 0deg); }
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg); }
   100% {
-    -webkit-transform: rotate3d(1, 1, 0, 360deg);
-    transform: rotate3d(1, 1, 0, 360deg); } }
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+    transform: rotateX(360deg) rotateY(360deg); } }
 @keyframes rotate {
   0% {
-    -webkit-transform: rotate3d(1, 1, 0, 0deg);
-    transform: rotate3d(1, 1, 0, 0deg); }
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg); }
   100% {
-    -webkit-transform: rotate3d(1, 1, 0, 360deg);
-    transform: rotate3d(1, 1, 0, 360deg); } }
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+    transform: rotateX(360deg) rotateY(360deg); } }
 #page6 .assess-box li {
   position: absolute;
   left: 0;
