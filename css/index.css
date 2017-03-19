@@ -40,7 +40,7 @@ h3 {
 
 .title {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   width: 256px;
   height: 85px;
@@ -148,9 +148,9 @@ h3 {
 
 @-webkit-keyframes move {
   0% {
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg); }
   100% {
-    transform: rotate(360deg); } }
+    -webkit-transform: rotate(360deg); } }
 @keyframes move {
   0% {
     transform: rotate(0deg); }
@@ -172,6 +172,7 @@ h3 {
     height: 3.3rem;
     background: url("../img/bg_leaf.png") no-repeat;
     background-size: 100% auto;
+    -webkit-transform-origin: bottom center;
     transform-origin: bottom center;
     opacity: 0; }
 
@@ -196,9 +197,9 @@ h3 {
   animation: resumeAfter 0.3s both; }
 @-webkit-keyframes resumeAfter {
   0% {
-    transform: scale3d(0, 0, 0); }
+    -webkit-transform: scale3d(0, 0, 0); }
   100% {
-    transform: scale3d(1, 1, 1); } }
+    -webkit-transform: scale3d(1, 1, 1); } }
 @keyframes resumeAfter {
   0% {
     transform: scale3d(0, 0, 0); }
@@ -420,6 +421,7 @@ h3 {
     height: 100%;
     top: 0; } }
 #page3 .info li {
+  -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0); }
 
 #page3 .info li {
@@ -427,22 +429,26 @@ h3 {
   animation: leftIn 0.5s both 2.5s; }
 
 #page3 .info li:nth-child(2) {
+  -webkit-animation-delay: 3s;
   animation-delay: 3s; }
 
 #page3 .info li:nth-child(3) {
+  -webkit-animation-delay: 3.5s;
   animation-delay: 3.5s; }
 
 #page3 .info li:nth-child(4) {
+  -webkit-animation-delay: 4s;
   animation-delay: 4s; }
 
 #page3 .info li:nth-child(5) {
+  -webkit-animation-delay: 4.5s;
   animation-delay: 4.5s; }
 
 @-webkit-keyframes leftIn {
   0% {
-    transform: translate3d(-100%, 0, 0); }
+    -webkit-transform: translate3d(-100%, 0, 0); }
   100% {
-    transform: translate3d(0, 0, 0); } }
+    -webkit-transform: translate3d(0, 0, 0); } }
 @keyframes leftIn {
   0% {
     transform: translate3d(-100%, 0, 0); }
@@ -474,7 +480,7 @@ h3 {
     width: 100%;
     height: 100%;
     background-color: #f90;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 5px; }
   .work-list li:nth-child(1) {
@@ -564,6 +570,7 @@ h3 {
   box-sizing: border-box;
   border: 1px solid #f90;
   background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 .assess-box li:nth-child(6) {

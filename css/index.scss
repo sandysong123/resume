@@ -20,7 +20,7 @@ body{font-size:16px;line-height:1.5em;overflow-x:hidden;}
 h3{text-align:center;font-size:30px;line-height:80px;}
 .title {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   width: 256px;
   height: 85px;
@@ -79,10 +79,10 @@ h3{text-align:center;font-size:30px;line-height:80px;}
 .musicCur{@include animation(move 1s infinite linear both)}
 @-webkit-keyframes move {
   0%{
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   100%{
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 @keyframes move {
@@ -109,6 +109,7 @@ h3{text-align:center;font-size:30px;line-height:80px;}
     height: 3.3rem;
     background: url("../img/bg_leaf.png") no-repeat;
     background-size: 100% auto;
+    -webkit-transform-origin: bottom center;
     transform-origin: bottom center;
     opacity: 0
   }
@@ -119,8 +120,8 @@ h3{text-align:center;font-size:30px;line-height:80px;}
   &:after{content:'';position:absolute;z-index:6;left:50%;top:50%;margin:0 0 0 -.7rem;width:1.4rem;height:1.4rem;border-radius:50%;background-color:#f90;box-shadow:0 0 0 6px rgba(255,255,255,.7);@include animation(resumeAfter .3s both)}
   @at-root {
     @-webkit-keyframes resumeAfter {
-      0%{transform: scale3d(0,0,0)}
-      100%{transform: scale3d(1,1,1)}
+      0%{-webkit-transform: scale3d(0,0,0)}
+      100%{-webkit-transform: scale3d(1,1,1)}
     }
     @keyframes resumeAfter {
       0%{transform: scale3d(0,0,0)}
@@ -225,25 +226,29 @@ h3{text-align:center;font-size:30px;line-height:80px;}
   80%{height:150%;top:-25%;opacity: 1}
   100%{height:100%;top:0}
 }
-#page3 .info li{transform:translate3d(-100%,0,0)}
+#page3 .info li{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}
 #page3 .info li{
   @include animation(leftIn .5s both 2.5s)
 }
 #page3 .info li:nth-child(2){
+  -webkit-animation-delay:3s;
   animation-delay:3s
 }
 #page3 .info li:nth-child(3){
+  -webkit-animation-delay:3.5s;
   animation-delay:3.5s
 }
 #page3 .info li:nth-child(4){
+  -webkit-animation-delay:4s;
   animation-delay:4s
 }
 #page3 .info li:nth-child(5){
-  animation-delay:4.5s
+  -webkit-animation-delay:4.5s;
+  animation-delay:4.5s;
 }
 @-webkit-keyframes leftIn {
-  0%{transform: translate3d(-100%,0,0)}
-  100%{transform: translate3d(0,0,0)}
+  0%{-webkit-transform: translate3d(-100%,0,0)}
+  100%{-webkit-transform: translate3d(0,0,0)}
 }
 @keyframes leftIn {
   0%{transform: translate3d(-100%,0,0)}
@@ -306,7 +311,7 @@ h3{text-align:center;font-size:30px;line-height:80px;}
   0%{transform: rotate3d(1,1,0,0deg)}
   100%{transform: rotate3d(1,1,0,360deg)}
 }
-#page6 .assess-box li{position: absolute;left:0;top:0;width:100%;height:100%;line-height: 4rem;box-sizing:border-box;border:1px solid #f90;background-color:rgba(255,255,255,.8);backface-visibility:hidden;}
+#page6 .assess-box li{position: absolute;left:0;top:0;width:100%;height:100%;line-height: 4rem;box-sizing:border-box;border:1px solid #f90;background-color:rgba(255,255,255,.8);-webkit-backface-visibility:hidden;backface-visibility:hidden;}
 .assess-box li:nth-child(6){
   -webkit-transform:rotateX(90deg) translate3d(0,0,2rem);
   transform:rotateX(90deg) translate3d(0,0,2rem);
@@ -333,5 +338,4 @@ h3{text-align:center;font-size:30px;line-height:80px;}
 }
 .head-pic{display:block;width:2.5rem;height:2.5rem;margin:.5rem auto .3rem;border-radius:50%;overflow: hidden}
 .icon-tel{position:absolute;bottom:40px;left:50%;margin-left:-.6rem;width:1.2rem;height:1.2rem;overflow: hidden;text-indent:-20rem;border-radius:50%;@include  animation(mail ease-in 1s infinite);background: url("../img/tel.png") no-repeat;background-size: 100% 100%}
-.slide7{}
 
