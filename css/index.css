@@ -93,6 +93,7 @@ h3 {
   z-index: 999;
   left: 50%;
   bottom: 10px;
+  -webkit-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
   background: url("../img/bg_hill.png") no-repeat;
   -webkit-animation: hill 0.5s linear infinite;
@@ -480,9 +481,9 @@ h3 {
     width: 100%;
     height: 100%;
     background-color: #f90;
+    border-radius: 5px;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 5px; }
+    backface-visibility: hidden; }
   .work-list li:nth-child(1) {
     -webkit-transform: rotateY(0deg) translateZ(2.8rem);
     transform: rotateY(0deg) translateZ(2.8rem); }
@@ -504,7 +505,9 @@ h3 {
   margin: 0 auto;
   width: 4rem;
   height: 4rem;
+  -webkit-perspective: 2000px;
   perspective: 2000px;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   text-align: center;
   font-size: 36px;
@@ -569,9 +572,7 @@ h3 {
   line-height: 4rem;
   box-sizing: border-box;
   border: 1px solid #f90;
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
+  background-color: rgba(255, 255, 255, 0.8); }
 
 .assess-box li:nth-child(6) {
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 2rem);
