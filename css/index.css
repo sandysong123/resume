@@ -56,9 +56,11 @@ h3 {
     width: 256px;
     height: 85px;
     background: url("../img/bg_tit.png") no-repeat 0 -85px;
-    background-size: 256px auto;
-    -webkit-animation: titMove linear 3s both;
-    animation: titMove linear 3s both; }
+    background-size: 256px auto; }
+
+#page1 .title i {
+  -webkit-animation: titMove linear 3s both;
+  animation: titMove linear 3s both; }
 
 @-webkit-keyframes titMove {
   0% {
@@ -175,7 +177,7 @@ h3 {
 
 #page2 .resume-list li a {
   display: block;
-  padding: .5rem .3rem 0; }
+  padding: .5rem .4rem 0; }
 #page2 .resume-list li:nth-child(1) {
   z-index: 2; }
 #page2 .resume-list:after {
@@ -458,7 +460,9 @@ h3 {
   margin: 10px auto 0;
   width: 4rem;
   height: 70%;
+  -webkit-perspective: 2000px;
   perspective: 2000px;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   font-size: 14px; }
   .work-list h4 {
@@ -470,6 +474,7 @@ h3 {
     width: 100%;
     height: 100%;
     background-color: #f90;
+    backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 5px; }
   .work-list li:nth-child(1) {
@@ -589,13 +594,13 @@ h3 {
   display: block;
   width: 2.5rem;
   height: 2.5rem;
-  margin: .8rem auto .3rem;
+  margin: .5rem auto .3rem;
   border-radius: 50%;
   overflow: hidden; }
 
 .icon-tel {
   position: absolute;
-  bottom: 100px;
+  bottom: 40px;
   left: 50%;
   margin-left: -.6rem;
   width: 1.2rem;

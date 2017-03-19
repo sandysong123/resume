@@ -37,9 +37,10 @@ h3{text-align:center;font-size:30px;line-height:80px;}
     height: 85px;
     background: url("../img/bg_tit.png") no-repeat 0 -85px;
     background-size: 256px auto;
-    @include animation(titMove linear 3s both);
   }
 }
+#page1 .title i{
+  @include animation(titMove linear 3s both);}
 @-webkit-keyframes titMove {
   0%{height:0;width:0;}
   50%{height:85px;width:100px}
@@ -113,7 +114,7 @@ h3{text-align:center;font-size:30px;line-height:80px;}
   }
 }
 #page2 .resume-list{
-  li a{display:block;padding:.5rem .3rem 0;}
+  li a{display:block;padding:.5rem .4rem 0;}
   li:nth-child(1){z-index:2;}
   &:after{content:'';position:absolute;z-index:6;left:50%;top:50%;margin:0 0 0 -.7rem;width:1.4rem;height:1.4rem;border-radius:50%;background-color:#f90;box-shadow:0 0 0 6px rgba(255,255,255,.7);@include animation(resumeAfter .3s both)}
   @at-root {
@@ -256,7 +257,9 @@ h3{text-align:center;font-size:30px;line-height:80px;}
   margin: 10px auto 0;
   width: 4rem;
   height: 70%;
+  -webkit-perspective: 2000px;
   perspective: 2000px;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   font-size: 14px;
   h4 {
@@ -269,6 +272,7 @@ h3{text-align:center;font-size:30px;line-height:80px;}
     width: 100%;
     height: 100%;
     background-color: #f90;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 5px;
   }
@@ -327,6 +331,7 @@ h3{text-align:center;font-size:30px;line-height:80px;}
   -webkit-transform:translate3d(0,0,2rem);
   transform:translate3d(0,0,2rem);
 }
-.head-pic{display:block;width:2.5rem;height:2.5rem;margin:.8rem auto .3rem;border-radius:50%;overflow: hidden}
-.icon-tel{position:absolute;bottom:100px;left:50%;margin-left:-.6rem;width:1.2rem;height:1.2rem;overflow: hidden;text-indent:-20rem;border-radius:50%;@include  animation(mail ease-in 1s infinite);background: url("../img/tel.png") no-repeat;background-size: 100% 100%}
+.head-pic{display:block;width:2.5rem;height:2.5rem;margin:.5rem auto .3rem;border-radius:50%;overflow: hidden}
+.icon-tel{position:absolute;bottom:40px;left:50%;margin-left:-.6rem;width:1.2rem;height:1.2rem;overflow: hidden;text-indent:-20rem;border-radius:50%;@include  animation(mail ease-in 1s infinite);background: url("../img/tel.png") no-repeat;background-size: 100% 100%}
+.slide7{}
 
