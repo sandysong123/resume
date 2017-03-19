@@ -256,17 +256,21 @@ h3{text-align:center;font-size:30px;line-height:80px;}
 }
 
 .skill-text{margin:0 15px;padding:0 10px;line-height:40px;background-image:repeating-linear-gradient(to bottom,transparent 0 ,transparent 39px,rgba(255,255,255,.6) 40px);color:#f90}
-
+.slide4{
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+}
 .work-list {
   position: relative;
   margin: 10px auto 0;
   width: 4rem;
   height: 70%;
-  -webkit-perspective: 2000px;
-  perspective: 2000px;
+
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   font-size: 14px;
+  //-webkit-transform: rotateX(90deg);
+  //transform: rotateX(89deg);
   h4 {
     font-size: 14px;
   }
@@ -278,6 +282,8 @@ h3{text-align:center;font-size:30px;line-height:80px;}
     height: 100%;
     background-color: #f90;
     border-radius: 5px;
+    -webkit-transform: scale3d(0,0,1);
+    transform: scale3d(0,0,1);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
