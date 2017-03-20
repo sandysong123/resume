@@ -94,6 +94,7 @@ h3{text-align:center;font-size:30px;line-height:80px;}
   text-align: center;
   font-weight: bold;
   padding-top: 1.2rem;
+  transform-style:preserve-3d;
   li {
     position: absolute;
     left: 50%;
@@ -138,6 +139,7 @@ h3{text-align:center;font-size:30px;line-height:80px;}
   padding:0 10px 0 20px;
   height: 76%;
   overflow: hidden;
+  transform-style:preserve-3d;
   box-sizing: border-box;line-height:40px;background-image:repeating-linear-gradient(to bottom,transparent 0 ,transparent 39px,rgba(255,255,255,.6) 40px);
   background-color: rgba(180, 180, 180, 0.2);
   color:#f90;
