@@ -239,7 +239,17 @@ h3{text-align:center;font-size:30px;line-height:80px;}
     @include css3(backface-visibility,hidden);
     &:after{
       content: '';
-      position: absolute;left:0;top:0;bottom:0;right:0;border:.01rem solid #f90;border-radius:8px;pointer-events:none;
+      position: absolute;left:0;top:0;bottom:0;right:0;border:1px solid #f90;
+      @include css3(transform-origin,left top);
+border-radius:8px;pointer-events:none;
+      @at-root {
+        @media only screen and (-webkit-min-device-pixel-ratio: 2){
+          .work-list li:after{
+            @include css3(transform,scale(0.5));
+            right:-100%;bottom:-100%;
+          }
+        }
+      }
     }
   }
   @for $i from 0 through 4{
@@ -272,7 +282,7 @@ h3{text-align:center;font-size:30px;line-height:80px;}
   0%{@include css3(transform,rotateX(0deg) rotateY(0deg))}
   100%{@include css3(transform, rotateX(360deg) rotateY(360deg))}
 }
-#page6 .assess-box li{position: absolute;left:0;top:0;width:100%;height:100%;line-height: 4rem;box-sizing:border-box;border:1px solid #f90;background-color:rgba(255,255,255,.8);}
+#page6 .assess-box li{position: absolute;left:0;top:0;width:100%;height:100%;line-height: 4rem;box-sizing:border-box;border:1px solid #f90;background-color:rgba(180,180,180,.2);}
 .assess-box li:nth-child(6){
   @include css3(transform,rotateX(90deg) translate3d(0,0,2rem));
 }

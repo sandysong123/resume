@@ -144,11 +144,7 @@
             });
         }
     });
-
     var $lis=$('.resume-list li');
-//    $lis.eq(0).on('click',function(){
-//        mySwiper.slideTo(2,1000,false)
-//    });
 
     $lis.eq(0).click(function(){
         mySwiper.slideTo(3, 1000, false);
@@ -183,14 +179,11 @@
             music.className='music';
         }
     });
-
-    //->只要在移动端使用TOUCH MOVE事件实现滑动,都需要把当前文档滑动的默认行为阻止掉;移动端的浏览器大部分都有自身的滑动操作,例如:滑动的时候是切换到下一个页卡区域...
     $(document).on('touchmove', function (e) {
         e.preventDefault();
     });
 
     var $workList = $('.work-list');
-    //->首先在盒子的自定义属性上记录一下起始的旋转角度
     $workList.attr({
         rotateY: 0
     });
@@ -227,6 +220,5 @@
         })
     });
 </script>
-
 </body>
 </html>
